@@ -1,33 +1,33 @@
 ##
 ## EPITECH PROJECT, 2022
-## Makefile 
+## Makefile
 ## File description:
 ## Makefile
 ##
 
-CC      =       gcc
+CC	=	gcc
 
-PTH     =       src/
+PTH	=	src/
 
-SRC     =       $(PTH)main.c
+SRC	=	$(PTH)main.c
 
-OBJ     =       $(SRC:.c=.o)
+OBJ	=	$(SRC:.c=.o)
 
-NAME    =       navy
+NAME	=	exe
 
-CFLAGS  =       -iquote ./includes/ -Wextra -Wall
+CFLAGS	=	-iquote ./includes/ -Wextra -Wall
 
-all:    $(NAME)
+all:	$(NAME)
 
-$(NAME):        $(OBJ)
-        $(CC) $(SRC) -o $(NAME) $(CFLAGS)
+$(NAME):	$(OBJ)
+	$(CC) $(SRC) -o $(NAME) $(CFLAGS)
 
 clean:
-        rm -f $(OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
-        rm -f $(NAME)
+	rm -f $(NAME)
 
-re:     fclean all
+re:	fclean all
 
 .PHONY: all clean fclean re
