@@ -1,4 +1,4 @@
-# -EPITECH-script_basicrepo_c
+# script_basicrepo_c
 
 Welcome to my first script and public repository of Github
 
