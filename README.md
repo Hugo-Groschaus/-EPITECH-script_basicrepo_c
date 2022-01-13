@@ -7,7 +7,7 @@ This script is mostly useful for Epitech student, very practical to create a bas
 How to use it
 
 1/
-First you will have to put the "repos" folder in your home folder.
+First you will have to put the ".repos" folder in your home folder.
 If you want to change the folder or the names don't forget to update your changes in the scrit
 
 2/
