@@ -5,10 +5,15 @@
 ** includer
 */
 
+
 #ifndef _MY_H_
     #define _MY_H_
-    #include <stdio.h>
     #include <unistd.h>
+    #include <sys/types.h>
+    #include <sys/stat.h>
+    #include <fcntl.h>
     #include <stdlib.h>
+    #include <stdio.h>
+    #include <stddef.h>
 
-#endif /* _MY_H_ */
+#endif /* MY_H_ */
