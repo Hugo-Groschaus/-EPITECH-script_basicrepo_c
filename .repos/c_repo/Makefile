@@ -1,4 +1,3 @@
-
 ##
 ## EPITECH PROJECT, 2022
 ## Makefile
@@ -16,13 +15,19 @@ OBJ	=	$(SRC:.c=.o)
 
 NAME	=	exe
 
-CFLAGS	=	-Wextra -Wall -iquote./includes/ -L. -lmy
+CFLAGS	=	-o
+
+CPPFLAGS	=	-Wextra -Wall -iquote./includes/
+
+LDFLAGS	=	-L.
+
+LDLIBS	=	-lmy
 
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
 	$(MAKE) -C lib/my/
-	$(CC) $(SRC) -o $(NAME) $(CFLAGS)
+	$(CC) $(OBJ) $(CFLAGS) $(NAME) $(CPPFLAGS) $(LDFLAGS) $(LDLIBS)
 
 clean:
 	rm -f $(OBJ)
