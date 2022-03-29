@@ -19,6 +19,8 @@ CFLAGS	=	-o
 
 CPPFLAGS	=	-Wextra -Wall -iquote./includes/
 
+CSFML	=	-l csfml-graphics -l csfml-system -l csfml-audio
+
 LDFLAGS	=	-L.
 
 LDLIBS	=	-lmy
