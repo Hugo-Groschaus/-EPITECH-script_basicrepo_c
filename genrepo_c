@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 mkdir src includes
-cp $HOME/.repos/c_repo/Makefile .
-cp $HOME/.repos/c_repo/main.c ./src/
-cp $HOME/.repos/c_repo/lib .
-cp $HOME/.repos/c_repo/lib/my/my.h includes/
+cp -r $HOME/.repos/c_repo/Makefile .
+cp -r $HOME/.repos/c_repo/main.c ./src/
+cp -r $HOME/.repos/c_repo/lib .
+cp -r $HOME/.repos/c_repo/lib/my/my.h includes/
